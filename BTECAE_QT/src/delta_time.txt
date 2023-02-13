@@ -1,0 +1,75 @@
+// global variables and constants
+
+const unsigned int TARGET_FPS = 40;
+
+const double TIME_PER_FRAME = 1000.0 / TARGET_FPS;
+
+int g_start_time;
+
+int g_current_frame_number;
+
+ 
+
+ 
+
+void init()
+
+{
+
+    g_start_time = glutGet(GLUT_ELAPSED_TIME);
+
+    g_current_frame_number = 0;
+
+}
+
+ 
+
+void display()
+
+{
+
+    my_render(g_current_frame_number);
+
+}
+
+ 
+
+void idle ()
+
+{
+
+    double end_frame_time, end_rendering_time, waste_time;
+
+ 
+
+    // event handling is done elsewhere
+
+ 
+
+    // draw current frame
+
+    glutPostRedisplay();
+
+ 
+
+    // wait until it is time to draw the current frame
+
+    end_frame_time = g_start_time + (g_current_frame_number + 1) * TIME_PER_FRAME;
+
+    end_rendering_time = glutGet(GLUT_ELAPSED_TIME);
+
+    waste_time = end_frame_time – end_rendering_time;
+
+    if (waste_time > 0.0)
+
+         sleep(waste_time / 1000.0);    // sleep parameter should be in seconds
+
+ 
+
+    // update frame number
+
+    g_current_frame_number = g_current_frame_number + 1;
+
+}
+
+    

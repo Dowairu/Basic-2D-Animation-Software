@@ -1,0 +1,9 @@
+*.o
+build/
+.vscode
+tmp/
+build-ParticleQT-LabQt-Debug/
+BlankNGL/build/Debug/BlankNGL.exe
+BlankNGL/build/Debug/BlankNGL.lib
+BlankNGL/build/Debug/BlankNGL.pdb
+build-BTECAE_QT-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/
