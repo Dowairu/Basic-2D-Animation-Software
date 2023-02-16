@@ -61,8 +61,9 @@ Here are some of the more important, interesting/challenging features that I wou
 src="images/demonstration.gif"
 alt="demonstration"
 title="demonstration"/>
-Project demonstration
 </p>
+<p align="center">Project demonstration</p>
+
 
 ## conclusion
 I'm not very proud of the final product, I definetly feel I could have done a lot more. I didnt start on time which cost me lot. Despite this, I learned a lot about OOP and the overall software development process.The project also served as a really good introduction to OpenGL and has opened my eyes to the power we hold as Technical Artists. making use of and learning git was also really  great. I created a few branches while working and it was really cool, I was able to test out solutions to problems without affecting my work which was amazing.   
